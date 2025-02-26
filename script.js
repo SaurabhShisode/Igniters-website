@@ -13,3 +13,10 @@ document.querySelectorAll('.container a').forEach(anchor => {
         }
     });
 });
+
+
+
+    function toggleMenu() {
+        document.querySelector('.container').classList.toggle('show');
+    }
+
