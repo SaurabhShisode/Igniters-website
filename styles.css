@@ -25,68 +25,54 @@
     max-width:calc(100% - 40px) ;
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 50px;
     margin: 20px 20px;
     position: fixed;
     top: 0px;
     left:0px;
+    gap:10px;
+    overflow: auto;
     
 
 }
 
-.leftmenu{
-    margin-left: 0px ;
-    display: flex;
-    align-items: center;
-    width: 320px;
-    height: 65px;
-    background-color:; 
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    gap: 20px; 
-    
-    
-}
 
 
-.leftmenu img{
+
+.container img{
     width: 70px;
 }
 
-.clubname {
-    font-size: 25px;
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: bold;
-    color:rgb(10, 55, 102) ;
-    letter-spacing: ;
-}
-
-
-
-.rightmenu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.logo-clubname {
     display: flex;
     align-items: center;
-    height: 65px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    gap: 20px; 
+    gap: 10px; 
+}
+.clubname {
+        font-size: 25px; 
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: bold;
+        color: rgb(10, 55, 102);
+        letter-spacing: 1px;
+        max-width: 220px; 
+        text-align: center; 
+        word-wrap: break-word; 
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
 }
 
-.rightmenu div {
+
+.container > div:not(.logo-clubname){
     
     padding: 10px 20px;
     cursor: pointer; 
-    border-radius: 10px;
+    border-radius: 50px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     
 }
 
-.rightmenu a {
+.container a {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 17px;
@@ -95,9 +81,9 @@
     
 }
 
-.rightmenu div:hover {
+.container > div:not(.logo-clubname):hover {
     background-color: #A0C878; 
-    border-radius: 10px;
+    border-radius: 50px;
     transform: scale(1.1); 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -117,32 +103,28 @@ body{
     margin: 0px 0px 20px 0px;
 }
 
-.heading {
-   
-}
 
-#events {
+
+.events {
     position: relative;
-    top: 130px;
+    top: 290px;
+    margin-bottom: 190px;
     
 
 }
 
-#events h1{
-    color: white;
+.events h1{
+    color: rgb(176, 208, 219);
     font-family: "Poppins", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     left: 50%;
     top: -70px;
-    
-    
-
 }
 
 .content {
     z-index: 3;
-    background-color:#DDEB9D;
+    background-color:rgb(176, 208, 219);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,12 +133,11 @@ body{
     max-width:calc(100% - 40px) ;
     box-sizing: border-box;
     border-radius: 15px;
-    margin: 30px 20px;
+    margin: 30px 0px;
     position: relative;
-    left:18%;
+    left:20%;
     overflow: hidden;
 }
-
 
 
 .eventlogo {
@@ -169,25 +150,62 @@ body{
     position: absolute;
     top: 20px;
     font-family: "Anton", sans-serif;
-    font-size: 50px;
+    font-size: 55px;
+    color: rgb(17, 48, 66);
+    letter-spacing: 1px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
 }
 
+.intro > p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center; 
+    width: 60%; 
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    line-height: 1.6; 
+}
 
-
-
-.gradient-text {
-    font-size: 50px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ff758c, #ff7eb3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.achievements {
+    position: relative;
+    top: 290px;
     
+    
+
+}
+
+.achievements h1{
+    color: rgb(176, 208, 219);
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    left: 50%;
+    top: -70px;
 }
 
 
+.team {
+    position: relative;
+    top: 290px;
+    margin-bottom: 190px;
+    
 
+}
 
-
+.team h1{
+    color: rgb(176, 208, 219);
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    left: 50%;
+    top: -70px;
+}
 
 
 
@@ -253,4 +271,54 @@ body {
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+
+@media (max-width:980px){
+    
+  
+    .container img{
+        width: 50px;
+    }
+    
+    .clubname {
+            font-size: 18px; 
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: bold;
+            color: rgb(10, 55, 102);
+            letter-spacing: 1px;
+            max-width: 160px; 
+            text-align: center; 
+            word-wrap: break-word; 
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+    }
+    
+    
+    .container > div:not(.logo-clubname){
+        
+        padding: 10px 20px;
+        cursor: pointer; 
+        border-radius: 50px;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        
+    }
+    
+    .container a {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color:rgb(10, 55, 102);
+        text-decoration: none;
+        
+    }
+    
+    .container > div:not(.logo-clubname):hover {
+        background-color: #A0C878; 
+        border-radius: 50px;
+        transform: scale(1.1); 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
 }
