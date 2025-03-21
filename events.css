@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    background: rgb(17, 48, 66);
+    background: linear-gradient(1355deg, rgb(17, 48, 66), #DDEB9D);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+    color: black;
+    overflow-x: hidden; 
+    overflow-y: auto;
+
+}
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+    
