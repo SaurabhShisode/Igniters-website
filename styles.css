@@ -27,13 +27,22 @@
 
 body {
     font-family: 'Exo', sans-serif;
-    background: rgb(17, 48, 66);
-    background: linear-gradient(135deg, rgb(17, 48, 66), #DDEB9D);
-    background-size: 200% 200%;
-    animation: gradientAnimation 6s ease infinite;
-    color: black;
     overflow-x: hidden; 
     overflow-y: auto;
+    font-family: 'DMsans', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('assets/waves.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -52,11 +61,11 @@ body {
 }
 
 .mycontainer {
-    background-color: #DDEB9D;
+    background-color: rgba(60, 60, 60, 0.39);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;  /* Reduced width */
+    width: 75%; 
     max-width: 900px; 
     padding: 12px 20px;
     box-sizing: border-box;
@@ -69,9 +78,12 @@ body {
     z-index: 1000;
     height:93px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border: solid 1px white;
+    border-color: hsla(0, 0%, 100%, .15);
 }
 
-/* Logo and Club Name */
+
 .mycontainer img {
     width: 70px;
 }
@@ -86,7 +98,7 @@ body {
     font-size: 25px;
     font-family: "Chakra Petch", sans-serif;
     font-weight: bold;
-    color: rgb(10, 55, 102);
+    color: rgb(133, 174, 219);
     letter-spacing: 1px;
     max-width: 220px;
     text-align: left;
@@ -107,23 +119,25 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 17px;
-    color: rgb(10, 55, 102);
+    color: rgb(133, 174, 219);
     text-decoration: none;
 }
 
-.mycontainer > div:not(.logo-clubname):hover {
-    background-color: #A0C878;
+.mycontainer > div:not(.logo-clubname, .disabled):hover {
     border-radius: 50px;
     transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
+#hero {
+   
+}
 
 
 .hero-font {
     font-family: "Anton",  sans-serif;
     font-weight: 400; 
-    font-size: 40px; 
+    font-size: 45px; 
     line-height: 1.5; 
     color: rgb(255, 255, 255);
 }
@@ -133,25 +147,24 @@ body {
     font-weight: 400; 
     font-size: 18px; 
     line-height: 1.5; 
-    color: ; 
+    color: rgb(190, 185, 185);
 }
 
 #carousel {
-    background-color:white;
     padding: 50px 0; 
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    
 }
 
 
 .carousel-small-text {
-    font-size: 15px;
+    color:white;
+    font-family: "Poppins",  sans-serif;
+    font-size: 18px;
 }
 
 .btn-contact {
-    background-color: rgb(10, 55, 102);
-    color: white;
+font-family: "Poppins",  sans-serif;
+
 }
 
 .white-bg {
@@ -165,12 +178,59 @@ body {
     font-family: "Delius",   sans-serif;
 }
 
+.carousel-bold {
+    color: white;
+}
+.carousel-muted {
+    color: rgb(190, 185, 185);
+}
+.featurette-divider {
+    border: 1px solid white;
+}
+
+#footer {
+    color:white;
+}
+.flex-column{
+    color: white;
+}
+
+#footer p, h5, li {
+    font-family: "Poppins",  sans-serif;
+
+}
+svg {
+    fill: white;
+}
+
+.my-card {
+    background: rgba(52, 58, 64, 0.6);
+    color: white;
+    backdrop-filter: blur(10px);
+    border: solid 1px white;
+    border-color: hsla(0, 0%, 100%, .15);
+    height: 480px;
+    width:100%;
+    cursor: pointer;
+}
+.my-card img {
+    background-color: white; 
+
+}
+.my-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.my-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
 
 
+.poppins {
+    font-family: "Poppins",  sans-serif;
+}
 
-
-
-/* Responsive Design */
 @media (max-width: 1068px) {
     .mycontainer {
         width: 90%; 
@@ -191,7 +251,6 @@ body {
     }
 }
 @media (max-width: 860px) {
-    .logo-clubname {
-        display: none;
+    
     }
 }
