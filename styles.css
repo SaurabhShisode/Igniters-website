@@ -42,7 +42,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(18px);
 
 }
 
@@ -199,6 +199,10 @@ font-family: "Poppins",  sans-serif;
     font-family: "Poppins",  sans-serif;
 
 }
+#footer li {
+    cursor: pointer;
+
+}
 svg {
     fill: white;
 }
@@ -214,7 +218,7 @@ svg {
     cursor: pointer;
 }
 .my-card img {
-    background-color: white; 
+    background-color:rgb(37, 2, 57);
 
 }
 .my-card {
@@ -230,6 +234,12 @@ svg {
 .poppins {
     font-family: "Poppins",  sans-serif;
 }
+
+.member-name {
+    font-size:25px;
+    color: white;
+}
+
 
 @media (max-width: 1068px) {
     .mycontainer {
