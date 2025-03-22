@@ -21,12 +21,12 @@ const testimonials = [
     },
     {
         name: "Vivek Kaushik",
-        position: "Event Management Co-Lead",
+        position: "Event Management Lead",
         avatar: "/assets/kv.jpg"
     },
     {
         name: "Shanu Shekhar Giri",
-        position: "Vice-president",
+        position: "Event Management Co-Lead",
         avatar: "/assets/kv.jpg"
     },
     {
