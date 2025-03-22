@@ -129,10 +129,6 @@ body {
     
 }
 
-#hero {
-   
-}
-
 
 .hero-font {
     font-family: "Anton",  sans-serif;
@@ -171,12 +167,6 @@ font-family: "Poppins",  sans-serif;
     background-color:white;
 }
 
-.swipe-cards-title {
-    color: black;
-    font-size: 60px
-    font-weight: 200;
-    font-family: "Delius",   sans-serif;
-}
 
 .carousel-bold {
     color: white;
@@ -188,21 +178,7 @@ font-family: "Poppins",  sans-serif;
     border: 1px solid white;
 }
 
-#footer {
-    color:white;
-}
-.flex-column{
-    color: white;
-}
 
-#footer p, h5, li {
-    font-family: "Poppins",  sans-serif;
-
-}
-#footer li {
-    cursor: pointer;
-
-}
 svg {
     fill: white;
 }
@@ -227,7 +203,7 @@ svg {
 
 .my-card:hover {
     transform: scale(1.05); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
 }
 
 
@@ -238,7 +214,7 @@ svg {
 .member-name {
     font-size:25px;
     color: white;
-    
+
     width:250px;
     text-wrap: wrap;
     display: flex;
@@ -270,8 +246,11 @@ svg {
     height: 350px; 
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    
 }
-
+.mask{
+-webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%, transparent 80%);
+}
 
 .team-carousel:hover {
     animation-play-state: paused;
@@ -292,7 +271,7 @@ svg {
 .testimonial-track {
     display: flex;
     gap: 50px;
-    animation: moveLeft 70s linear infinite;
+    animation: moveLeft 90s linear infinite;
     cursor: pointer;
     
 }
@@ -325,8 +304,9 @@ svg {
 }
 .testimonial-track div:hover {
     transform: scale(1.05); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.56); 
 }
+
 @keyframes moveLeft {
     from {
         transform: translateX(40%);
@@ -339,23 +319,156 @@ svg {
 @media (max-width: 1068px) {
     .mycontainer {
         width: 90%; 
-        flex-direction: row;
-        text-align: center;
         gap: 8px;
-        padding: 10px;
     }
 
     .mycontainer > div:not(.logo-clubname) {
         padding: 8px 15px;
     }
 
-    .navbar-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+    .hero-font {
+        font-size: 35px; 
+    }
+    
+    .hero-child-font{
+        font-size: 15px; 
+    }
+    .carousel-small-text {
+        
+        font-size: 15px;
+    }
+    .card-body p {
+        font-size:16px;
     }
 }
+
+
 @media (max-width: 860px) {
+
+    #navbar {
+        height:110px;
+    }
+    .mycontainer img {
+        width: 45px;
+    }
+    
+    
+    .clubname {
+        display:none;
+
+    }
+    .mycontainer {
+        width: 95%; 
+        height:70px;
+        gap:3px;
+        
+    }
+    .mycontainer > div:not(.logo-clubname) {
+        padding: 10px 10px;
+    }
+    
+    .mycontainer a {
+        font-size: 13px;
+    }
+    .hero-font {
+        font-size: 25px; 
+    }
+    
+    .hero-child-font{
+        font-size: 12px; 
+    }
+    .btn-contact {
+        width: auto;
+        display: inline-block; 
+        white-space: nowrap; 
+    }
+        
+    #carousel {
+        padding: 0px 10px; 
+        width: 100%;
+    }
+    
+    
+    .carousel-small-text {
+        
+        font-size: 12px;
+    }
+    .my-card {
+        margin:10px;
+        height: 480px;
+        width: 94.5%;
+        cursor: pointer;
+    }
+    .my-card img {
+        background-color:rgb(37, 2, 57);
     
     }
+    .my-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .my-card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
+    }
+    .card-body p {
+        font-size:15px;
+    }
+    .member-name {
+        font-size:18px;
+        width:180px;
+ 
+    }
+    .member-pos {
+        font-size:15px;
+        width:180px;
+
+    }
+    .team-container {
+        height: 350px; 
+ 
+    }
+    .mask{
+    -webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%, transparent 80%);
+    }
+    
+    .team-carousel:hover {
+        animation-play-state: paused;
+    }
+  
+    .testimonial-container {
+        height: 350px; 
+        
+    }
+    
+    .testimonial-track {
+
+        gap: 30px;
+        animation: moveLeft 90s linear infinite;
+        
+        
+    }
+    
+    
+    .testimonial-card {
+        width: 210px;
+        height: 280px;
+       
+    }
+    
+    .testimonial-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        margin-top: 20px
+    }
+    .testimonial-track div {
+        
+    }
+    .testimonial-track div:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.56); 
+    }
 }
+
