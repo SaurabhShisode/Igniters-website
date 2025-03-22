@@ -1,22 +1,15 @@
-document.querySelectorAll('.container a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            const navbarHeight = document.querySelector('.container').offsetHeight;
-            window.scrollTo({
-                top: targetElement.offsetTop - navbarHeight - 20, // Adjust 20px for spacing
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
-
-
-    function toggleMenu() {
+function toggleMenu() {
         document.querySelector('.container').classList.toggle('show');
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.querySelector(".team-carousel");
+        const members = Array.from(carousel.children);
+    
+        members.forEach(member => {
+            const clone = member.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+});
+    

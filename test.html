@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .testimonial-container {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .testimonial-track {
+            display: flex;
+            gap: 20px;
+            animation: moveLeft 10s linear infinite;
+        }
+
+        .testimonial-card {
+            width: 250px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        @keyframes moveLeft {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center my-5">
+    <h2>What Clients Say About Me</h2>
+    <p>Real testimonials from satisfied clients.</p>
+
+    <div class="testimonial-container">
+        <div class="testimonial-track" id="testimonialTrack">
+            <!-- JavaScript will populate testimonials here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    const testimonials = [
+        {
+            name: "Kumarvaishnav",
+            position: "Marketing Manager @ TechStartups",
+            text: "Saurabh transformed our website into a powerful tool.",
+            avatar: "https://via.placeholder.com/80"
+        },
+        {
+            name: "Venus Agrawal",
+            position: "Head of Design @ GreenLeaf",
+            text: "His expertise in frontend development brought our designs to life.",
+            avatar: "https://via.placeholder.com/80"
+        },
+        {
+            name: "Virag Jain",
+            position: "CEO @ InnovateCo",
+            text: "Our website has seen a significant increase in conversions.",
+            avatar: "https://via.placeholder.com/80"
+        },
+        {
+            name: "Rishika Awasthi",
+            position: "Product Manager @ GlobalTech",
+            text: "He made our product intuitive and engaging.",
+            avatar: "https://via.placeholder.com/80"
+        },
+        {
+            name: "Aditya Patil",
+            position: "Director of IT @ MegaCorp",
+            text: "Saurabh is an exceptional developer and communicator.",
+            avatar: "https://via.placeholder.com/80"
+        }
+    ];
+
+    function loadTestimonials() {
+        const track = document.getElementById("testimonialTrack");
+
+        // Duplicate testimonials to ensure infinite scrolling
+        const allTestimonials = [...testimonials, ...testimonials];
+
+        allTestimonials.forEach(t => {
+            const card = document.createElement("div");
+            card.classList.add("testimonial-card");
+            card.innerHTML = `
+                <img src="${t.avatar}" alt="${t.name}">
+                <h5>${t.name}</h5>
+                <p class="text-muted">${t.position}</p>
+                <p>"${t.text}"</p>
+            `;
+            track.appendChild(card);
+        });
+    }
+
+    loadTestimonials();
+</script>
+
+</body>
+</html>
