@@ -378,9 +378,10 @@ svg {
         font-size: 12px; 
     }
     .btn-contact {
-        width: auto;
+        width: 170px;
         display: inline-block; 
         white-space: nowrap; 
+        margin: auto;
     }
         
     #carousel {
