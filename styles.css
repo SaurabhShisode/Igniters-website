@@ -305,6 +305,7 @@ svg {
 .testimonial-track div:hover {
     transform: scale(1.05); 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.56); 
+    background-color: rgba(0, 0, 0, 0.82);
 }
 
 @keyframes moveLeft {
@@ -450,7 +451,6 @@ svg {
         
     }
     
-    
     .testimonial-card {
         width: 210px;
         height: 280px;
@@ -470,6 +470,7 @@ svg {
     .testimonial-track div:hover {
         transform: scale(1.05); 
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.56); 
+        background-color: rgb(0, 0, 0);
     }
 }
 
