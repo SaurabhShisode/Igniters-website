@@ -468,6 +468,9 @@ svg {
     .mycontainer a {
         font-size: 13px;
     }
+    #hero {
+        margin-bottom: 0px;
+    }
     .hero-font {
         font-size: 25px; 
     }
@@ -481,7 +484,33 @@ svg {
         white-space: nowrap; 
         margin: auto;
     }
-        
+    .hero-info {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 3fr); 
+        gap: 15px; 
+    }
+    
+    .hero-info-items {
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .hero-info-font{
+
+        font-weight: 450; 
+        font-size: 14px; 
+       
+    }
+    .learn-more {
+        width: 170px;
+        display: inline-block; 
+        white-space: nowrap; 
+        margin: auto;
+    }
     #carousel {
         padding: 0px 10px; 
         width: 100%;
