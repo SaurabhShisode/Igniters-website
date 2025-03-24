@@ -139,7 +139,9 @@ body::before {
     
 }
 
-
+#hero {
+    margin-bottom: 70px;
+}
 .hero-font {
     font-family: "Anton",  sans-serif;
     font-weight: 400; 
@@ -155,9 +157,35 @@ body::before {
     font-weight: 450; 
     font-size: 20px; 
     line-height: 1.5; 
-    color: rgb(190, 185, 185);
+    color: #beb9b9;
 }
 
+.hero-info {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info-items {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.hero-info-font{
+    font-family: "Poppins",  sans-serif;
+    font-weight: 450; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    color: #beb9b9;
+    margin-bottom: 0px;
+}
 #carousel {
     padding: 50px 0; 
     width: 100%;
@@ -174,7 +202,15 @@ body::before {
 font-family: "Poppins",  sans-serif;
 
 }
-
+.btn-contact:hover {
+border: none;
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
+    transition: 
+        transform 0.2s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
+}
 .white-bg {
     background-color:white;
 }
@@ -365,6 +401,16 @@ svg {
     text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.learn-more:hover {
+    border: none;
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
+    transition: 
+        transform 0.2s ease-in-out, 
+        box-shadow 0.3s ease-in-out;
 }
 
 
