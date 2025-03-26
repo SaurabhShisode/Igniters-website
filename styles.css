@@ -191,7 +191,9 @@ body::before {
     width: 100%;
 }
 
-
+#events {
+    background-color:rgb(61, 61, 61);
+}
 .carousel-small-text {
     color:white;
     font-family: "Poppins",  sans-serif;
@@ -225,7 +227,7 @@ border: none;
 .featurette-divider {
     border: 1px solid white;
 }
-\
+
 svg {
     fill: white;
 }
@@ -600,4 +602,80 @@ svg {
         background-color: rgb(0, 0, 0);
     }
 }
+.looper-container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px; 
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgb(32, 32, 32);
+    
 
+}
+
+.my-looper-grid {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: loopermoveLeft 300s linear infinite;
+    cursor: pointer;
+    align-self: flex-start;
+    
+}
+
+@keyframes loopermoveLeft {
+    from {
+        transform: translateX(85%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.my-looper-grid-right {
+    align-self: flex-end;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    animation: loopermoveRight 380s linear infinite;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@keyframes loopermoveRight {
+    from {
+        transform: translateX(-70%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+.my-looper, .my-looper-right {
+    text-align: left;
+    display: flex;
+    height: 85px;
+    gap: 10px;
+    cursor: pointer;
+    background: rgb(56, 56, 56);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+.my-looper p, .my-looper-right p {
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.my-looper-grid:hover, .my-looper-grid-right:hover{
+    animation-play-state: paused;
+}
+
+.my-looper, .my-looper-right, .my-looper-duplicate {
+    transition: background 0.3s ease, color 0.3s ease;
+}
