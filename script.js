@@ -99,7 +99,7 @@ const testimonials = [
 function loadTestimonials() {
     const track = document.getElementById("testimonialTrack");
 
-    const allTestimonials = [...testimonials, ...testimonials,...testimonials];
+    const allTestimonials = [...testimonials, ...testimonials,...testimonials,...testimonials,...testimonials,...testimonials,...testimonials,...testimonials,...testimonials];
 
     allTestimonials.forEach(t => {
         const card = document.createElement("div");
@@ -118,12 +118,12 @@ loadTestimonials();
 
 
 const loopelements = [
-    { name: "Help me study vocabulary for a college entrance exam" },
-    { name: "Write a message that goes with a kitten gif " },
-    { name: "Test my knowledge on ancient civilizations" },
-    { name: "Write a text asking a friend to be my plus" },
-    { name: "Improve my essay writing ask me to outline " },
-    { name: "Plan a ‘mental health day’ to help me relax" }
+    { name: "Discover new opportunities in our club!" },
+    { name: "Engage in fun club workshops and sessions." },
+    { name: "Network with like-minded club members." },
+    { name: "Help organize our next big club project." },
+    { name: "Showcase your skills at the club showcase." },
+    { name: "Be a part of our club’s leadership team." }
 ];
 
 function loadLooper() {
@@ -143,12 +143,12 @@ function loadLooper() {
 
 
 const loopelementsRight = [
-    { name: "Help me study vocabulary for a college entrance exam" },
-    { name: "Write a message that goes with a kitten gif " },
-    { name: "Test my knowledge on ancient civilizations" },
-    { name: "Write a text asking a friend to be my plus" },
-    { name: "Improve my essay writing ask me to outline " },
-    { name: "Plan a ‘mental health day’ to help me relax" }
+    { name: "Join our weekly club meeting!" },
+    { name: "Plan the next club event with us." },
+    { name: "Volunteer for upcoming club activities." },
+    { name: "Share your ideas for club improvements." },
+    { name: "Compete in our club challenge this month." },
+    { name: "Connect with fellow club members today." }
 ];
 
 function loadLooperRight() {
