@@ -140,7 +140,7 @@ body::before {
 }
 
 #hero {
-    margin-bottom: 200px;
+    margin-bottom: 230px;
 }
 .hero-font {
     font-family: "Anton",  sans-serif;
@@ -192,7 +192,10 @@ body::before {
 }
 
 #events {
-    background-color:rgb(61, 61, 61);
+    background-color:rgb(37, 37, 37);
+}
+#team {
+    background-color:rgb(54, 54, 54)
 }
 .carousel-small-text {
     color:white;
@@ -677,5 +680,5 @@ svg {
 }
 
 .my-looper, .my-looper-right, .my-looper-duplicate {
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.7s ease, color 0.7s ease;
 }

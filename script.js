@@ -173,10 +173,10 @@ function observeLooperCards(selector) {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.background = "rgb(121, 119, 119)";
+                entry.target.style.background = "rgb(54, 54, 54)";
                 entry.target.querySelector("p").style.color = "white"; // Highlight as soon as visible
             } else {
-                entry.target.style.background = "rgb(32, 32, 32);";
+                entry.target.style.background = "rgb(32, 32, 32)";
                 entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)"; // Revert when not visible
             }
         });
@@ -189,7 +189,7 @@ function observeLooperCards(selector) {
     function updateVisibility() {
         observer.takeRecords().forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.background = "#ff9800";
+                entry.target.style.background = "rgb(121, 119, 119)";
             } else {
                 entry.target.style.background = "rgb(56, 56, 56)";
             }
