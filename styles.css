@@ -663,7 +663,6 @@ svg {
     height: 85px;
     gap: 10px;
     cursor: pointer;
-    background: rgb(56, 56, 56);
     border-radius: 6px;
     padding: 10px;
 }
