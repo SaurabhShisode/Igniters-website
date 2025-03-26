@@ -2,97 +2,97 @@ const testimonials = [
     {
         name: "Kumarvaishnav",
         position: "President",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Mehar Parnami",
         position: "Vice-president",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "R Simran Nair",
         position: "Secretary",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Sawari Jamgaonkar",
         position: "Joint Secretary",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Vivek Kaushik",
         position: "Event Management Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Shanu Shekhar Giri",
         position: "Event Management Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Amandeep Singh Khalsa",
         position: "Media & Photography Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Saurabh Shisode",
         position: "Media & Photography Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Devarsh Shah",
         position: "Technical Team Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Mehul Singh",
         position: "Technical Team Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Vatsal Baranwal",
         position: "Content Team Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Arnav Karn",
         position: "Content Team Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Disha Gupta",
         position: "Social Media Team Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Riya Verma",
         position: "Social Media Team Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Vikas Shukla",
         position: "PR & Outreach Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Harshit Gujar",
         position: "Design Team Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Maher Sarah Jafri",
         position: "Design Team Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Pranav Sanjay Jahagirdar",
         position: "HR Team Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
     {
         name: "Tushita Gakkhar",
         position: "HR Team Co-Lead",
-        avatar: "/assets/kv.jpg"
+        avatar: "/assets/saurabh.jpg"
     },
 ];
 
