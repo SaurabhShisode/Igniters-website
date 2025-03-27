@@ -165,8 +165,6 @@ function loadLooperRight() {
     });
 }
 
-// Function to observe elements and change background color
-// Function to observe elements and change background color continuously
 function observeLooperCards(selector) {
     const cards = document.querySelectorAll(selector);
     
@@ -174,18 +172,18 @@ function observeLooperCards(selector) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.background = "rgb(54, 54, 54)";
-                entry.target.querySelector("p").style.color = "white"; // Highlight as soon as visible
+                entry.target.querySelector("p").style.color = "white"; 
             } else {
                 entry.target.style.background = "rgb(32, 32, 32)";
-                entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)"; // Revert when not visible
+                entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)"; 
             }
         });
     }, { root: null, rootMargin: "0px", threshold: [1.0] });
 
-    // Observe each card
+    
     cards.forEach(card => observer.observe(card));
 
-    // 🔄 Continuous update using requestAnimationFrame
+    
     function updateVisibility() {
         observer.takeRecords().forEach(entry => {
             if (entry.isIntersecting) {
@@ -196,7 +194,7 @@ function observeLooperCards(selector) {
                 entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)";
             }
         });
-        requestAnimationFrame(updateVisibility); // Keeps checking frequently
+        requestAnimationFrame(updateVisibility); 
     }
 
     requestAnimationFrame(updateVisibility);
