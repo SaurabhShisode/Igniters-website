@@ -202,6 +202,29 @@ body {
     color: #beb9b9;
     margin-bottom: 0px;
 }
+.animate-hero {
+    animation: slideUp 0.8s ease-out forwards;
+}
+.animate-hero-child {
+    animation: slideUp 0.85s ease-out forwards;
+}
+.animate-hero-btn {
+    animation: slideUp 0.88s ease-out forwards;
+}
+.animate-hero-info {
+    animation: slideUp 0.92s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(90px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 #carousel {
     padding: 50px 0; 
     width: 100%;
@@ -374,20 +397,8 @@ svg {
     background-color: rgba(0, 0, 0, 0.82);
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
-.section-animate {
-    animation: slideUp 0.8s ease-out forwards;
-}
+
 @keyframes moveLeft {
     from {
         transform: translateX(40%);
@@ -431,10 +442,73 @@ svg {
         box-shadow 0.3s ease-in-out;
 }
 
-#footer {
+
+.footer {
     background-color:rgb(37, 37, 37);
+    color: #ffffff;
+    padding: 40px 0;
+}
+.footer h3, .footer h5 {
+    color: #ffffff;
+}
+.footer-child {
+    color: #bbb;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin-bottom: 5px;
+}
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color:rgb(64, 97, 163); 
+    
+}
+.social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.social-icons a:hover {
+    color: #1dbf73;
+}
+.footer .form-control {
+    background: #1a1e27;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.footer .btn-success {
+    background:rgba(78, 76, 184, 0.86);
+    border: none;
+    width: 100%;
+}
+.footer .btn-success:hover {
+    background:rgba(49, 48, 114, 0.86);
+}
+.form-control {
+    background-color: #1a1e27;  
+    color: #ddd;  
+    border: 1px solid #444; 
+    padding: 10px;
 }
 
+.form-control::placeholder {
+    color: #bbb; 
+}
+
+.form-control:focus {
+    background-color: #222835; 
+    color: #fff;
+    border-color: #222835; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(17, 120, 236, 0.5);
+}
 @media (max-width: 1068px) {
     .mycontainer {
         width: 90%; 
