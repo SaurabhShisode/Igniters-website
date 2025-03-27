@@ -475,7 +475,7 @@ svg {
     margin-right: 10px;
 }
 .social-icons a:hover {
-    color: #1dbf73;
+    color:rgb(64, 97, 163); 
 }
 .footer .form-control {
     background: #1a1e27;
@@ -502,200 +502,6 @@ svg {
     color: #bbb; 
 }
 
-.form-control:focus {
-    background-color: #222835; 
-    color: #fff;
-    border-color: #222835; 
-    outline: none;
-    box-shadow: 0 0 5px rgba(17, 120, 236, 0.5);
-}
-@media (max-width: 1068px) {
-    .mycontainer {
-        width: 90%; 
-        gap: 8px;
-    }
-
-    .mycontainer > div:not(.logo-clubname) {
-        padding: 8px 15px;
-    }
-
-    .hero-font {
-        font-size: 35px; 
-    }
-    
-    .hero-child-font{
-        font-size: 15px; 
-    }
-    .carousel-small-text {
-        
-        font-size: 15px;
-    }
-    .card-body p {
-        font-size:16px;
-    }
-}
-
-
-@media (max-width: 860px) {
-
-    #navbar {
-        height:110px;
-    }
-    .mycontainer img {
-        width: 45px;
-    }
-    
-    
-    .clubname {
-        display:none;
-
-    }
-    .mycontainer {
-        width: 95%; 
-        height:70px;
-        gap:3px;
-        
-    }
-    .mycontainer > div:not(.logo-clubname) {
-        padding: 10px 10px;
-    }
-    .mycontainer > div:not(.logo-clubname, .disabled):hover {
-        background-color: transparent !important;
-    }
-    .mycontainer a {
-        font-size: 13px;
-    }
-    #hero {
-        margin-bottom: 0px;
-    }
-    .hero-font {
-        font-size: 25px; 
-    }
-    
-    .hero-child-font{
-        font-size: 12px; 
-    }
-    .btn-contact {
-        width: 170px;
-        display: inline-block; 
-        white-space: nowrap; 
-        margin: auto;
-    }
-    .hero-info {
-        margin-top: 50px;
-        grid-template-columns: repeat(1, 3fr); 
-        gap: 15px; 
-    }
-    
-    .hero-info-items {
-        gap: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        white-space: nowrap;
-    }
-    .hero-info-font{
-
-        font-weight: 450; 
-        font-size: 14px; 
-       
-    }
-    .learn-more {
-        width: 170px;
-        display: inline-block; 
-        white-space: nowrap; 
-        margin: auto;
-    }
-    #carousel {
-        padding: 0px 10px; 
-        width: 100%;
-    }
-    
-    
-    .carousel-small-text {
-        
-        font-size: 12px;
-    }
-    .my-card {
-        margin:10px;
-        height: 480px;
-        width: 94.5%;
-        cursor: pointer;
-    }
-    .my-card img {
-        background-color:rgb(37, 2, 57);
-    
-    }
-    .my-card {
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-    
-    .my-card:hover {
-        transform: scale(1.05); 
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
-    }
-    .card-body p {
-        font-size:15px;
-    }
-    .member-name {
-        font-size:18px;
-        width:180px;
- 
-    }
-    .member-pos {
-        font-size:15px;
-        width:180px;
-
-    }
-    .team-container {
-        height: 350px; 
- 
-    }
-    .mask{
-    -webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%, transparent 80%);
-    }
-    
-    .team-carousel:hover {
-        animation-play-state: paused;
-    }
-  
-    .testimonial-container {
-        height: 350px; 
-        
-    }
-    
-    .testimonial-track {
-
-        gap: 30px;
-        animation: moveLeft 90s linear infinite;
-        
-        
-    }
-    
-    .testimonial-card {
-        width: 210px;
-        height: 280px;
-       
-    }
-    
-    .testimonial-card img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        margin-top: 20px
-    }
-    .testimonial-track div {
-        
-    }
-    .testimonial-track div:hover {
-        transform: scale(1.05); 
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.56); 
-        background-color: rgb(0, 0, 0);
-    }
-}
 .looper-container {
     justify-content: center;
     align-items: center;
@@ -772,4 +578,335 @@ svg {
 
 .my-looper, .my-looper-right, .my-looper-duplicate {
     transition: background 0.7s ease, color 0.7s ease;
+}
+
+.form-control:focus {
+    background-color: #222835; 
+    color: #fff;
+    border-color: #222835; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(17, 120, 236, 0.5);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mycontainer {
+        width: 90%; 
+        gap: 8px;
+    }
+
+    .mycontainer > div:not(.logo-clubname) {
+        padding: 8px 15px;
+    }
+
+    .hero-font {
+        font-size: 35px; 
+    }
+    
+    .hero-child-font{
+        font-size: 15px; 
+    }
+
+    #navbar {
+        height:110px;
+    }
+    #hero {
+        margin-bottom: 0px;
+    }
+    .hero-font {
+        font-size: 25px; 
+    }
+    
+    .hero-child-font{
+        font-size: 12px; 
+    }
+    .btn-contact {
+        font-size: 12px; 
+
+    }
+    .learn-more {
+        font-size: 12px; 
+    }
+    .hero-info {
+        margin-top: 30px;
+    }
+    
+    .hero-info-font{
+        font-size: 12px; 
+       
+    }
+    .hero-info-items svg {
+        height:14px;
+        width:14px;
+    }
+    .looper-container {
+        height: 160px; 
+    }
+
+    .my-looper, .my-looper-right {
+        height: 65px;
+        
+    }
+ 
+    .my-looper p, .my-looper-right p {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .member-name {
+        font-size:18px;
+        width:180px;
+ 
+    }
+    .member-pos {
+        font-size:15px;
+        width:180px;
+
+    }
+    .team-container {
+        height: 280px; 
+ 
+    }
+    .mask{
+    -webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%, transparent 80%);
+    }
+    
+    .team-carousel:hover {
+        animation-play-state: paused;
+    }
+  
+    .testimonial-container {
+        height: 300px; 
+        
+    }
+    
+    .testimonial-track {
+        animation: moveLeft 280s linear infinite;
+        
+        
+    }
+    
+    .testimonial-card {
+        width: 210px;
+        height: 250px;
+       
+    }
+    
+    .footer {
+        background-color:rgb(37, 37, 37);
+        color: #ffffff;
+        padding: 40px 0;
+    }
+    .footer h3 {
+        font-size:22px;
+    }
+    .footer h5 {
+        font-size:18px;
+    }
+    .footer-child {
+        color: #bbb;
+        font-size:15px;
+    }
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+    .footer-links a {
+        font-size:15px;
+    }
+    .footer .btn-success {
+        font-size:15px;
+    }
+    .social-icons a {
+        font-size: 18px; 
+    }
+    
+    .form-control::placeholder {
+        color: #bbb; 
+        font-size:15px;
+    }
+    .address{
+        font-size: 15px;
+    } 
+}
+
+
+@media (max-width: 767px) {
+
+    #navbar {
+        height:55px;
+    }
+    .mycontainer img {
+        width: 45px;
+    }
+    
+    .clubname {
+        display:none;
+
+    }
+    .mycontainer {
+        width: 95%; 
+        height:70px;
+        gap:3px;
+        
+    }
+    .mycontainer > div:not(.logo-clubname) {
+        padding: 10px 10px;
+    }
+    .mycontainer > div:not(.logo-clubname, .disabled):hover {
+        background-color: transparent !important;
+    }
+    .mycontainer a {
+        font-size: 13px;
+    }
+    #hero {
+        margin-bottom: 0px;
+    }
+    .hero-font {
+        font-size: 25px; 
+    }
+    
+    .hero-child-font{
+        font-size: 12px; 
+    }
+    
+    .btn-contact {
+        font-size: 12px; 
+
+    }
+    .learn-more {
+        font-size: 12px; 
+    }
+    .hero-info {
+        margin-top: 25px;
+        grid-template-columns: repeat(1, 3fr); 
+    }
+    .hero-info-items svg {
+        height:14px;
+        width:14px;
+    }
+    .hero-info-font{
+        font-size: 12px; 
+       
+    }
+    
+    .looper-container {
+        height: 160px; 
+    }
+
+    .my-looper, .my-looper-right {
+        height: 65px;
+        
+    }
+ 
+    .my-looper p, .my-looper-right p {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .my-card {
+        margin:10px;
+        height: 480px;
+        width: 94.5%;
+        cursor: pointer;
+    }
+    .my-card img {
+        background-color:rgb(37, 2, 57);
+    
+    }
+    .my-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .my-card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.39); 
+    }
+    .card-body p {
+        font-size:15px;
+    }
+    .member-name {
+        font-size:18px;
+        width:180px;
+ 
+    }
+    .member-pos {
+        font-size:15px;
+        width:180px;
+
+    }
+    .team-container {
+        height: 320px; 
+ 
+    }
+    .mask{
+    -webkit-mask-image: radial-gradient(circle, transparent 0%, black 0%, transparent 80%);
+    }
+    
+    .team-carousel:hover {
+        animation-play-state: paused;
+    }
+  
+    .testimonial-container {
+        height: 350px; 
+        
+    }
+    
+    .testimonial-track {
+        gap: 30px;
+        animation: moveLeft 300s linear infinite;
+   
+    }
+    
+    .testimonial-card {
+        width: 210px;
+        height: 280px;
+       
+    }
+    
+    .testimonial-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        margin-top: 20px
+    }
+    
+    .footer {
+        background-color:rgb(37, 37, 37);
+        color: #ffffff;
+        padding: 40px 0;
+    }
+    .footer h3 {
+        font-size:20px;
+    }
+    .footer h5 {
+        font-size:16px;
+    }
+    .footer-child {
+        color: #bbb;
+        font-size:13px;
+    }
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+    .footer-links a {
+        font-size:13px;
+    }
+    .footer .btn-success {
+        font-size:13px;
+    }
+    .social-icons a {
+        font-size: 16px; 
+    }
+    
+    .form-control::placeholder {
+        color: #bbb; 
+        font-size:13px;
+    }
+    .address{
+        font-size: 13px;
+    } 
 }
