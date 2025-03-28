@@ -168,41 +168,60 @@ function loadLooperRight() {
 function observeLooperCards(selector) {
     const cards = document.querySelectorAll(selector);
     
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.background = "rgb(54, 54, 54)";
-                entry.target.querySelector("p").style.color = "white"; 
-            } else {
-                entry.target.style.background = "rgb(32, 32, 32)";
-                entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)"; 
-            }
+    function applySmallScreenStyles() {
+        cards.forEach(card => {
+            card.style.background = "rgb(54, 54, 54)";
+            const paragraph = card.querySelector("p");
+            if (paragraph) paragraph.style.color = "white";
         });
-    }, { root: null, rootMargin: "0px", threshold: [1.0] });
-
-    
-    cards.forEach(card => observer.observe(card));
-
-    
-    function updateVisibility() {
-        observer.takeRecords().forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.background = "rgb(54, 54, 54)";
-                entry.target.querySelector("p").style.color = "white";
-            } else {
-                entry.target.style.background = "rgb(32, 32, 32)";
-                entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)";
-            }
-        });
-        requestAnimationFrame(updateVisibility); 
     }
 
-    requestAnimationFrame(updateVisibility);
+    function applyObserver() {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.background = "rgb(54, 54, 54)";
+                    entry.target.querySelector("p").style.color = "white";
+                } else {
+                    entry.target.style.background = "rgb(32, 32, 32)";
+                    entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)";
+                }
+            });
+        }, { root: null, rootMargin: "0px", threshold: [1.0] });
+
+        cards.forEach(card => observer.observe(card));
+
+        function updateVisibility() {
+            observer.takeRecords().forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.background = "rgb(54, 54, 54)";
+                    entry.target.querySelector("p").style.color = "white";
+                } else {
+                    entry.target.style.background = "rgb(32, 32, 32)";
+                    entry.target.querySelector("p").style.color = "rgba(121, 121, 121, 0.5)";
+                }
+            });
+            requestAnimationFrame(updateVisibility);
+        }
+
+        requestAnimationFrame(updateVisibility);
+    }
+
+    function checkScreenSize() {
+        if (window.innerWidth < 767) {
+            applySmallScreenStyles();
+        } else {
+            applyObserver();
+        }
+    }
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
 }
+
 window.onload = function () {
-    loadLooper(); 
-    loadLooperRight(); 
+    loadLooper();
+    loadLooperRight();
     observeLooperCards(".my-looper");
     observeLooperCards(".my-looper-right");
-    
 };
