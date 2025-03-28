@@ -397,7 +397,9 @@ svg {
     background-color: rgba(0, 0, 0, 0.82);
 }
 
-
+.team-bottom-margin {
+    margin-bottom: 3rem;
+}
 
 @keyframes moveLeft {
     from {
@@ -737,7 +739,7 @@ svg {
 @media (max-width: 767px) {
 
     #navbar {
-        height:55px;
+        height:110px;
     }
     .mycontainer img {
         width: 45px;
@@ -763,7 +765,7 @@ svg {
         font-size: 13px;
     }
     #hero {
-        margin-bottom: 0px;
+        margin-bottom: 240px;
     }
     .hero-font {
         font-size: 25px; 
@@ -873,11 +875,13 @@ svg {
         margin-bottom: 10px;
         margin-top: 20px
     }
-    
+    .team-bottom-margin {
+        margin-bottom: 0px;
+    }
     .footer {
         background-color:rgb(37, 37, 37);
         color: #ffffff;
-        padding: 40px 0;
+        padding: 40px 10px;
     }
     .footer h3 {
         font-size:20px;
