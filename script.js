@@ -252,3 +252,10 @@ window.onload = function () {
     observeLooperCards(".my-looper");
     observeLooperCards(".my-looper-right");
 };
+
+
+
+
+
+
+
